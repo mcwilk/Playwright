@@ -1,8 +1,8 @@
 # Directories
-
+.idea
 
 # Files
 
 
 # Environments
-.venv
+venv
