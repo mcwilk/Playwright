@@ -1,6 +1,5 @@
+import allure
 import pytest
-
-from playwright.sync_api import expect
 
 from FirstAppTestingWithPOP.pages.search_hotel_page import SearchHotelPage
 from FirstAppTestingWithPOP.pages.search_results_page import SearchResultsPage
@@ -9,6 +8,8 @@ from FirstAppTestingWithPOP.pages.search_results_page import SearchResultsPage
 @pytest.mark.usefixtures("setup")
 class TestHotelSearch:
 
+    @allure.title("Test method: test_hotel_search")
+    @allure.description("Test checking if 'search' option works as expected")
     def test_hotel_search(self, setup):
         page = setup
 

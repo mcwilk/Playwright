@@ -1,5 +1,6 @@
 import logging
 
+import allure
 from playwright.sync_api import Page
 
 from FirstAppTestingWithPOP.locators.locators import SearchResultLocators
@@ -11,9 +12,13 @@ class SearchResultsPage:
         self.page = page
         self.logger = logging.getLogger(__name__)
 
+    @allure.step("Checking results")
     def get_hotel_names(self):
         hotels = self.page.locator(SearchResultLocators.hotel_names_xpath)
         hotel_names = [hotels.nth(num).text_content() for num in range(hotels.count())]
+        allure.attach(
+            self.page.screenshot(), name="get_hotel_names", attachment_type=allure.attachment_type.PNG
+        )
 
         self.logger.info("Available hotels are:")
         for name in hotel_names:
