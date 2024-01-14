@@ -9,3 +9,9 @@ class SearchHotelLocators:
     adult_input_id = "#adultInput"
     child_input_id = "#childInput"
     search_button_name = " Search"
+
+
+class SearchResultLocators:
+
+    hotel_names_xpath = "//h4[contains(@class, 'list_title')]//b"
+    hotel_prices_xpath = "//div[contains(@class, 'price_tab')]//b"
