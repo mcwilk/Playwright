@@ -13,7 +13,13 @@ class MyAccountLocators:
 class BillingAddressLocators:
 
     addresses_link_text = "Addresses"
-    edit_link_name = page.locator("header").filter(has_text="Billing address Edit").get_by_role("link").click()  # ?????
+    edit_link_name_xpath = "//header[@class='woocommerce-Address-title title']//a"
     first_name_xpath = "//*[@id='account_first_name']"
     last_name_xpath = "//*[@id='account_last_name']"
-
+    country_xpath = "//*[@id='billing_country']"
+    address_1_xpath = "//*[@id='billing_address_1']"
+    post_code_xpath = "//*[@id='billing_postcode']"
+    city_xpath = "//*[@id='billing_city']"
+    phone_xpath = "//*[@id='billing_phone']"
+    save_address_button_xpath = "//button[@value='Save address']"
+    message_xpath = "//div[@class='woocommerce-message']"
