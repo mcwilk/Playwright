@@ -14,9 +14,10 @@ class BillingAddressLocators:
 
     addresses_link_text = "Addresses"
     edit_link_name_xpath = "//header[@class='woocommerce-Address-title title']//a"
-    first_name_xpath = "//*[@id='account_first_name']"
-    last_name_xpath = "//*[@id='account_last_name']"
-    country_xpath = "//*[@id='billing_country']"
+    first_name_xpath = "//*[@id='billing_first_name']"
+    last_name_xpath = "//*[@id='billing_last_name']"
+    country_xpath = "//*[@id='select2-billing_country-container']"
+    country_search_xpath = "//input[@class='select2-search__field']"
     address_1_xpath = "//*[@id='billing_address_1']"
     post_code_xpath = "//*[@id='billing_postcode']"
     city_xpath = "//*[@id='billing_city']"

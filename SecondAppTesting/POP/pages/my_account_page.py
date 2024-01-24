@@ -25,7 +25,7 @@ class MyAccountPage:
     def log_in(self, username, password):
         self.page.locator(self.username_input).fill(username)
         self.page.locator(self.password_input).fill(password)
-        self.page.locator(self.login_button).click()
+        self.page.get_by_text(self.login_button, exact=True).click()
 
     def create_account(self, email, password):
         self.page.locator(self.reg_email_input).fill(email)
