@@ -3,7 +3,7 @@ import random
 
 import pytest
 
-from utils.secret_config import PASSWORD
+# from utils.secret_config import PASSWORD
 from SecondAppTesting.POP.pages.billig_address_page import BillingAddressPage
 from SecondAppTesting.POP.pages.my_account_page import MyAccountPage
 
