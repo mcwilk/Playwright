@@ -7,12 +7,7 @@ from SecondAppTesting.POP.pages.billig_address_page import BillingAddressPage
 from SecondAppTesting.POP.pages.my_account_page import MyAccountPage
 
 
-try:
-    # getting PASSWORD from GitHub environment variables for CI/CD pipeline
-    PASSWORD = os.environ["PASSWORD"]
-
-except KeyError:
-    from utils.secret_config import PASSWORD
+PASSWORD = os.environ['PASSWORD']
 
 
 @pytest.mark.usefixtures("setup")

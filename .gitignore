@@ -6,7 +6,7 @@ reports
 /utils/secret_config.py
 
 # Files
-
+.env
 
 # Environments
 venv
