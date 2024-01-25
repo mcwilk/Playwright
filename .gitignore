@@ -3,6 +3,7 @@
 .pytest_cache
 __pycache__
 reports
+/utils/secret_config.py
 
 # Files
 
